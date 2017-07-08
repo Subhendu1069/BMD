@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Batch Automation Dashboard</title>
+	  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  
+
+  
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="chip">
+  		<img src="image/img_avatar.png" alt="Person" width="96" height="96">Subhendu Das
+  	</div>
+	<div>
+  		<a class="waves-effect waves-light" href="index.html">Home</a>
+  		
+  		<a class="waves-effect waves-light" href="Job_Monitor.html">Job Monitor</a>
+  		
+  		<a class="waves-effect waves-light" href="Task_Monitor.html">Task Monitor</a>
+  		
+  		<a class="waves-effect waves-light" href="Report.html">Report</a>
+  		
+  		<a class="waves-effect waves-light" href="Admin.html">Admin</a>
+	</div>
+</div>
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+    	<div class="navbar-header">
+     		<a class="navbar-brand">
+     			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+     		</a>
+		</div>
+		<h2 style="text-align: center;margin-top: 15px;">Batch Monitoring Dashboard</h2>
+	</div>
+</nav>
+
+	<div id="search_popup" style="display: none;">
+		<div class="row">
+			<div id="search_content" class="input-field col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="input-field col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+				<div class="input-field col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          			<input id="Jobname" type="text" class="validate" style="font-size: 24px;">
+          			<label for="Jobname" style="font-size: 20px;">JobName</label>
+        		</div>
+				<div class="input-field col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          			<input id="INC_Number" type="text" class="validate" style="font-size: 24px;">
+          			<label for="INC_Number" style="font-size: 20px;">INC Number</label>
+        		</div>
+				<div class="input-field col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          			<input type="date" class="datepicker" style="font-size: 24px;">
+          			<label for="Odate" style="font-size: 20px;">Odate</label>
+        		</div>
+				<div class="input-field col-xs-2 col-sm-2 col-md-2 col-lg-2">
+          			<input id="Handled_By" type="text" class="validate" style="font-size: 24px;">
+          			<label for="Handled_By" style="font-size: 20px;">Handled By</label>
+        		</div>
+				<button class="col-xs-2 col-sm-2 col-md-2 col-lg-1 search-hover"><span>Search </span></button>
+				<button class="col-xs-2 col-sm-2 col-md-2 col-lg-1 reset-hover"><span>Reset </span></button>
+			</div>
+		</div>	
+	</div>
+
+<div id ="search-bar" class="wrapper">
+	<a href="javascript:void(0);" class="search-button" onclick="openSearch()"><span id="sbtn" class="glyphicon glyphicon-chevron-down"> Search</span></a>
+</div>
+<div id="main" class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 glance_head"><h2 style="text-align: center;margin-top: 10px;">Job Monitor</h2></div>
+  	</div>
+</div>
+
+	<table class="tab">
+  <tr>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">JobName</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">Module</th> 
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">Odate</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">Failed At</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">Job ID</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">Status</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">CheckPoint</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">#INC</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">Action Taken</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">Action Status</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">Reminder Count</th>
+    <th class="table_head col-xs-1 col-sm-1 col-md-1 col-lg-1">Run Count</th>
+  </tr>
+  <tr>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">ABC0000P</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">AB215</td> 
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">01.07.2017</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">01.07.2017 12:00:33</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">JOB213254</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">In-Progress</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">Online</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">INC123456789</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">Restart</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">In-Progress</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">1</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">4</td>
+  </tr>
+  <tr>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">XYZ0000P</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">XY215</td> 
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">01.07.2017</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">01.07.2017 18:37:00</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">JOB213254</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">Open</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">Online</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1"></td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1"></td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1"></td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">0</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">1</td>
+  </tr>
+  <tr>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">ABC0001P</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">AB215</td> 
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">01.07.2017</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">01.07.2017 12:00:33</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">JOB213254</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">In-Progress</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">Online</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">INC123456789</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">Restart</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">In-Progress</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">1</td>
+    <td class="table_body col-xs-1 col-sm-1 col-md-1 col-lg-1">4</td>
+  </tr>
+</table>
+<br>
+
+
+
+<!-- Script -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    
+    <script language="JavaScript" type="text/javascript" src="js/script1.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+  
+</body>
+</html>
