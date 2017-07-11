@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Batch Automation Dashboard</title>
+
+  <!-- Style Start-->
+
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	 <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+     <link href="stylebmd.css" rel="stylesheet"> <!-- Custom style for this template -->
+
+  <!-- Style End -->
+
+</head>
+<body>
+<!-- Body Start-->
+
+<!-- Header -->
+
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+<div class="chip">
+    <img src="img_avatar.png" alt="Person" width="96" height="96">Subhendu Das
+  </div>
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+  <span class="glyphicon glyphicon-chevron-right" style="color:white;"></span>
+    
+  </button>
+  
+      <a class="navbar-brand" href="#">Batch Monitoring Dashboard</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="nav navbar-nav pull-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Job Monitor</a></li>
+        <li><a href="#">Task Monitor</a></li> 
+        <li><a href="#">Report</a></li> 
+        <li><a href="#">Admin</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="banner effect">
+<div class="container">
+  <div class="row">
+  <h1>DvSZ AT A GLANCE</h1>
+  </div>
+  </div>
+
+  </section>
+
+
+<div class="row">
+    <div class="col s12 m6 l3">
+        <div class="card">
+            <div class="card-content  deep-purple white-text">
+                <p class="card-stats-title"><i class="mdi-social-group-add"></i> Total Abend</p>
+                <h4 class="card-stats-number">50</h4>
+                <p class="card-stats-compare"><i class="glyphicon glyphicon-arrow-down"></i> 15% <span class="deep-purple-text text-lighten-5">from Previous EDP</span>
+                </p>
+            </div>
+            <div class="card-action  deep-purple darken-2">
+                <div id="trending-line-chart"><canvas width="290" height="25" style="display: inline-block; width: 290px; height: 25px; vertical-align: top;"></canvas></div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6 l3">
+        <div class="card">
+            <div class="card-content purple white-text">
+                <p class="card-stats-title"><i class="mdi-editor-attach-money"></i>Open Issues</p>
+                <h4 class="card-stats-number">25</h4>
+                <p class="card-stats-compare"><i class="glyphicon glyphicon-arrow-down"></i> 50% <span class="purple-text text-lighten-5">issues left</span>
+                </p>
+            </div>
+            <div class="card-action purple darken-2">
+                <div id="sales-compositebar"><canvas width="286" height="25" style="display: inline-block; width: 286px; height: 25px; vertical-align: top;"></canvas></div>
+
+            </div>
+        </div>
+    </div>                            
+    <div class="col s12 m6 l3">
+        <div class="card">
+            <div class="card-content blue-grey white-text">
+                <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Ticket Raised</p>
+                <h4 class="card-stats-number">50</h4>
+                <p class="card-stats-compare"><i class="glyphicon glyphicon-arrow-up"></i> 100% <span class="blue-grey-text text-lighten-5">issues notified</span>
+                </p>
+            </div>
+            <div class="card-action blue-grey darken-2">
+                <div id="profit-tristate"><canvas width="290" height="25" style="display: inline-block; width: 290px; height: 25px; vertical-align: top;"></canvas></div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6 l3">
+        <div class="card">
+            <div class="card-content blue-grey white-text">
+                <p class="card-stats-title"><i class="mdi-action-trending-up"></i> Mail Sent</p>
+                <h4 class="card-stats-number">40</h4>
+                <p class="card-stats-compare"><i class="glyphicon glyphicon-arrow-up"></i> 80% <span class="blue-grey-text text-lighten-5">from Previous EDP</span>
+                </p>
+            </div>
+            <div class="card-action blue-grey darken-2">
+                <div id="profit-tristate"><canvas width="290" height="25" style="display: inline-block; width: 290px; height: 25px; vertical-align: top;"></canvas></div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m6 l3">
+        <div class="card">
+            <div class="card-content green white-text">
+                <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i> Resolved Issues</p>
+                <h4 class="card-stats-number">20</h4>
+                <p class="card-stats-compare"><i class="glyphicon glyphicon-arrow-up"></i> 40% <span class="green-text text-lighten-5"> issues handled</span>
+                </p>
+            </div>
+            <div class="card-action  green darken-2">
+                <div id="invoice-line"><canvas width="418" height="25" style="display: inline-block; width: 418px; height: 25px; vertical-align: top;"></canvas></div>
+            </div>
+        </div>
+    </div>                            
+</div>
+            
+
+
+
+<!-- Body End-->
+<!-- Script Start-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+<script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+<script language="JavaScript" type="text/javascript" src="scriptbmd.js"></script> <!-- Custom script for this template -->
+
+
+<!-- Script End -->
+
+</body>
+</html>

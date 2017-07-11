@@ -1,0 +1,134 @@
+body{
+	background-color: #FFF;
+}
+section
+{
+  background: yellow;
+}
+.banner
+{
+  background:#2196F3;
+  min-height:200px;
+}
+.banner .row
+{
+  text-align:center;
+  margin-top:50px;
+}
+.banner h1
+{
+  color: #eee;
+  margin-top: 50px;
+
+}
+.banner h1:hover{
+	color: #FFF;
+}
+
+.effect
+{
+  position: relative;
+}
+.effect:before, .effect:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+
+}
+.effect:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+
+
+/***********************************************************************
+*  OPAQUE NAVBAR SECTION
+***********************************************************************/
+.opaque-navbar {
+    background-color: rgba(0,0,0,0.5);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 60px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+ul.dropdown-menu {
+    background-color: black;
+}
+
+
+.opaque-navbar {
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+.chip {
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    float: right;
+    margin-top: 10px;
+      box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+
+}
+
+.chip img {
+    float: left;
+    border-radius: 50%;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.5), 0 8px 18px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.row .col{
+	float: left;
+}
+
+.row .col.s12 {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 40px;
+    left: auto;
+    right: auto;
+}
+
+.row {
+    /* margin-right: -15px; */
+    margin-left: 80px;
+    margin-top: 60px;
+}
