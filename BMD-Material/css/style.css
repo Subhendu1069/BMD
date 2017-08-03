@@ -1,0 +1,119 @@
+body{
+	background-color: rgba(252, 252, 252, 0);
+}
+li{
+	height: 40px;
+}
+nav{
+	height: 40px;
+}
+.navbar{
+	min-height: 40px;
+
+}
+.navbar-nav{
+	margin: 0;
+}
+.container-fluid{
+	height: 40px;
+	padding: 0;
+
+}
+.navbar-header{
+	height: 40px;
+}
+.navbar-brand{
+	height: 40px;
+	line-height: 15px;
+}
+.navbar-toggle{
+	padding: 0;
+	margin: 0;
+	height: 40px;
+}
+nav i.material-icons{
+	height: 40px;
+	line-height: 40px;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+	margin:0;
+}
+div#myNavbar.navbar-collapse.collapse.in{
+	height: 40px;
+	background-color: #00bcd4 !important;
+}
+.chip{
+	color:rgba(255, 255, 255, 1);
+	background-color:rgba(228, 228, 228, 0);
+	border-left: 1px solid rgba(238, 238, 238, 0.28);
+	border-radius: 0;
+	height: 40px;
+	line-height: 3;
+	display: block;
+	cursor: pointer;
+}
+.chip>img{
+	float:right;
+	margin: 3px 0 0 2px;
+}
+.waves-effect{
+	display: block;
+}
+.displaytype{
+	display: flex;
+	padding: 0 10px;
+	cursor: pointer;
+	border-left: 1px solid rgba(238, 238, 238, 0.28);
+	height: 40px;
+}
+nav .input-field{
+	line-height: 1;
+}
+label{
+	color: #ffffff;
+}
+.head{
+	display: flex;
+}
+.headcon{
+	padding: 0 10px; 
+	border-right: 1px solid rgba(238, 238, 238, 0.28);
+	cursor: pointer;
+}
+nav .button-collapse{
+	margin: 0;
+}
+.input-field label:not(.label-icon).active{
+    -webkit-transform: translateY(0) scale(0.8);
+    transform: translateY(0) scale(0.8);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.input-field label{
+	color: white;
+}
+[type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after,[type="radio"]:checked+label:after,
+[type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid #ffffff;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after{
+	background-color: #ffffff;
+}
+#drop{
+	box-shadow: 6px 6px 15px #888888;
+}
+.navmenu{
+	height: 180px;
+}
+.side-nav li>a>i, .side-nav li>a>[class^="mdi-"], .side-nav li>a li>a>[class*="mdi-"], .side-nav li>a>i.material-icons{
+	margin: 0 10px 0 0;
+}
+.side-nav li>a{
+	text-decoration: none;
+}
+a:focus, a:hover{
+	color: #ffffff;
+}
+.user-view{
+	height: 180px;
+}

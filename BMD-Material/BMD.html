@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <title> BMD </title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+      <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+<nav class="navbar cyan">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <i class="material-icons">dehaze</i>
+      </button>
+      <div class="head">
+        <i class="material-icons headcon waves-effect waves-light button-collapse" data-activates="slide-out">graphic_eq</i>
+        <a class="navbar-brand" href="#">Batch Monitoring Dashboard</a>
+      </div>  
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <div class="date displaytype waves-effect waves-light">
+            <i class="material-icons" onclick="opendate()">date_range</i>
+            <div id="date" class="input-field" style="display: none;">
+               <label>Date</label>
+               <input type="text" class="datepicker">
+            </div>
+          </div>  
+        </li>
+        <li>
+          <div class="search displaytype waves-effect waves-light">
+              <i class="material-icons" onclick="opensearch()">search</i>
+              <div id="search" class="input-field" style="display: none;">
+                 <label>Search</label>
+                 <input type="text" class="validate">
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="chip waves-effect waves-light" data-toggle="collapse" data-target="#drop" aria-expanded="false" aria-controls="drop">
+              <img src="images/img_avatar.png" alt="Contact Person">
+              Subhendu Das
+            </div>
+            <div id="drop" class="cyan collapse">
+              <p>
+                <input class="with-gap" name="group1" type="radio" id="test1" />
+                <label for="test1">Team Lead</label>
+              </p>
+              <p>
+                <input class="with-gap" name="group1" type="radio" id="test2" checked />
+                <label for="test2">Team Member</label>
+              </p>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<ul id="slide-out" class="side-nav">
+  <li class="navmenu">
+    <div class="user-view">
+      <div class="background">
+        <img src="images/bmd.png">
+      </div>
+    </div>
+  </li>
+  <li><a class="waves-effect" href="#!"><i class="material-icons">home</i>Home</a></li>
+  <li><a class="waves-effect" href="#!"><i class="material-icons">grain</i>Job View</a></li>
+  <li><a class="waves-effect" href="#!"><i class="material-icons">grid_on</i>Task View</a></li>
+  <li><a class="waves-effect" href="#!"><i class="material-icons">group</i>Admin</a></li>
+</ul>
+
+
+
+      <!--Script-->
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
