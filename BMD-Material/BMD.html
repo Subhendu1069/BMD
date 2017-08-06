@@ -15,21 +15,21 @@
     </head>
 
     <body>
-<nav class="navbar cyan">
+<nav class="navbar black">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <i class="material-icons">dehaze</i>
       </button>
       <div class="head">
-        <i class="material-icons headcon waves-effect waves-light button-collapse" data-activates="slide-out">graphic_eq</i>
+        <i class="material-icons headcon waves-effect waves-light button-collapse hov" data-activates="slide-out">graphic_eq</i>
         <a class="navbar-brand" href="#">Batch Monitoring Dashboard</a>
       </div>  
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <div class="date displaytype waves-effect waves-light">
+          <div class="date displaytype waves-effect waves-light hov">
             <i class="material-icons" onclick="opendate()">date_range</i>
             <div id="date" class="input-field" style="display: none;">
                <label>Date</label>
@@ -38,7 +38,7 @@
           </div>  
         </li>
         <li>
-          <div class="search displaytype waves-effect waves-light">
+          <div class="search displaytype waves-effect waves-light hov">
               <i class="material-icons" onclick="opensearch()">search</i>
               <div id="search" class="input-field" style="display: none;">
                  <label>Search</label>
@@ -47,20 +47,10 @@
           </div>
         </li>
         <li>
-          <div class="chip waves-effect waves-light" data-toggle="collapse" data-target="#drop" aria-expanded="false" aria-controls="drop">
-              <img src="images/img_avatar.png" alt="Contact Person">
-              Subhendu Das
-            </div>
-            <div id="drop" class="cyan collapse">
-              <p>
-                <input class="with-gap" name="group1" type="radio" id="test1" />
-                <label for="test1">Team Lead</label>
-              </p>
-              <p>
-                <input class="with-gap" name="group1" type="radio" id="test2" checked />
-                <label for="test2">Team Member</label>
-              </p>
-            </div>
+          <div class="chip waves-effect waves-light hov" data-toggle="collapse" data-target="#drop" aria-expanded="false" aria-controls="drop">
+            <img src="images/img_avatar.png" alt="Contact Person">
+            Subhendu Das
+          </div>
         </li>
       </ul>
     </div>
@@ -70,7 +60,7 @@
   <li class="navmenu">
     <div class="user-view">
       <div class="background">
-        <img src="images/bmd.png">
+        <img src="images/bg.png">
       </div>
     </div>
   </li>
@@ -80,11 +70,298 @@
   <li><a class="waves-effect" href="#!"><i class="material-icons">group</i>Admin</a></li>
 </ul>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col s4 m3">
+      <div class="card white">
+        <div class="card-content black-text">
+          <span class="card-title">Total Issues</span>
+          <p class="compare"><i class="small material-icons">arrow_drop_up</i> 15% from previous EDP</p>
+          <div class="num">50</div>
+        </div>
+        <div class="card-action">
+          <p>Online:<span> 10 </span></p>
+          <p>EDP:<span> 20 </span></p>
+          <p>Non Critical:<span> 20 </span></p>
+          <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">visibility</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s4 m3">
+      <div class="card white">
+        <div class="card-content black-text">
+          <span class="card-title">Open Issues</span>
+          <p class="compare"><i class="small material-icons">arrow_drop_up</i> 15% from previous EDP</p>
+          <div class="num">30</div>
+        </div>
+        <div class="card-action">
+          <p>Online:<span> 2 </span></p>
+          <p>EDP:<span> 10 </span></p>
+          <p>Non Critical:<span> 18 </span></p>
+          <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">visibility</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s4 m3">
+      <div class="card white">
+        <div class="card-content black-text">
+          <span class="card-title">Tickets Raised</span>
+          <p class="compare"><i class="small material-icons">arrow_drop_up</i> 15% from previous EDP</p>
+          <div class="num">30</div>
+        </div>
+        <div class="card-action">
+          <p>Online:<span> 10 </span></p>
+          <p>EDP:<span> 20 </span></p>
+          <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">visibility</i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col s4 m3">
+      <div class="card white">
+        <div class="card-content black-text">
+          <span class="card-title">Resolved Issues</span>
+          <p class="compare"><i class="small material-icons">arrow_drop_up</i> 15% from previous EDP</p>
+          <div class="num">20</div>
+        </div>
+        <div class="card-action">
+          <p>Online:<span> 8 </span></p>
+          <p>EDP:<span> 10 </span></p>
+          <p>Non Critical:<span> 2 </span></p>
+          <a class="btn-floating halfway-fab waves-effect waves-red"><i class="material-icons">visibility</i></a>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="chart-container" style="height: 400px;width: 90%">
+      <div class="header"><h5> Runtime Report</h5></div>
+      <div class="chart-view">
+        <label class="labyr">Year</label>
+        <select class="browser-default">
+          <option value="1">2017</option>
+          <option value="2">2016</option>
+          <option value="3">2015</option>
+        </select>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="test1" checked onclick="if(this.checked){edp()}" />
+          <label for="test1">EDP View</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="test2" onclick="if(this.checked){month()}" />
+          <label for="test2">Month View</label>
+        </p>
+        <p>
+          <input class="with-gap" name="group1" type="radio" id="test3" onclick="if(this.checked){year()}" />
+          <label for="test3">Year View</label>
+        </p>
+      </div>
+      <div class="chart-disp">
+        <canvas id="lineChart1"></canvas>
+        <canvas id="lineChart2" style="display: none;"></canvas>
+        <canvas id="lineChart3" style="display: none;"></canvas>
+      </div>
+  </div>
+  <div class="SMEDetails">
+    <table class="highlight centered responsive-table">
+      <thead>
+        <tr>
+            <th>Name</th>
+            <th>Issues Assigned</th>
+            <th>Issues Pending</th>
+            <th>Issues Closed</th>
+
+            <th>Availability</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Subhendu</td>
+          <td>4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>Indranil</td>
+          <td>5</td>
+          <td>2</td>
+          <td>3</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>Saubhik</td>
+          <td>2</td>
+          <td>0</td>
+          <td>2</td>
+          <td>Not Avaialble</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 
 
       <!--Script-->
       
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+      <script>
+        function edp() {
+          document.getElementById("lineChart1").style.display = 'block';
+          document.getElementById("lineChart2").style.display = 'none';
+          document.getElementById("lineChart3").style.display = 'none';
+        }
+        function month() {
+          document.getElementById("lineChart1").style.display = 'none';
+          document.getElementById("lineChart2").style.display = 'block';
+          document.getElementById("lineChart3").style.display = 'none';
+        }
+        function year() {
+          document.getElementById("lineChart1").style.display = 'none';
+          document.getElementById("lineChart2").style.display = 'none';
+          document.getElementById("lineChart3").style.display = 'block';
+        }
+
+          var ctxL1 = document.getElementById("lineChart1").getContext('2d');
+          var myLineChart = new Chart(ctxL1, {
+            type: 'line',
+            data: {
+                labels: ["08-01-2017", "10-01-2017", "15-01-2017", "17-01-2017", "22-01-2017", "24-01-2017", "29-01-2017","31-01-2017","05-02-2017","07-02-2017","12-02-2017","14-02-2017","19-02-2017", "21-02-2017", "26-02-2017", "01-03-2017", "03-03-2017", "08-03-2017", "08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017", "10-01-2017", "15-01-2017", "17-01-2017", "22-01-2017", "24-01-2017", "29-01-2017","31-01-2017","05-02-2017","07-02-2017","12-02-2017","14-02-2017","19-02-2017", "21-02-2017", "26-02-2017", "01-03-2017", "03-03-2017", "08-03-2017", "08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017", "10-01-2017", "15-01-2017", "17-01-2017", "22-01-2017", "24-01-2017", "29-01-2017","31-01-2017","05-02-2017","07-02-2017","12-02-2017","14-02-2017","19-02-2017", "21-02-2017", "26-02-2017", "01-03-2017", "03-03-2017", "08-03-2017", "08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017", "08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017","08-01-2017"],
+                datasets: [
+                    {
+                        label: "Online Achieved",
+                        backgroundColor: "rgb(233, 227, 222)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [4, 5, 8, 8, 5, 4, 6, 4, 5, 8, 8, 5, 4, 6]
+                    },
+                    {
+                        label: "EDP Completed",
+                        backgroundColor: "rgb(194, 194, 194)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        pointColor: "rgba(151,187,205,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [8, 12, 10, 11, 8, 7, 9, 8, 12, 10, 11, 8, 7, 9]
+                    }
+                ]
+            },
+            options: {
+              scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            },
+              title: {
+                    display: true,
+                    position: 'left',
+                    text: 'Time(in hour)'
+                },
+                maintainAspectRatio: false,
+                responsive: true
+                
+            }    
+          });
+          var ctxL2 = document.getElementById("lineChart2").getContext('2d');
+          var myLineChart = new Chart(ctxL2, {
+            type: 'line',
+            data: {
+                labels: ["January", "February", "March", "April", "May", "June", "July","August","September","October","November","December"],
+                datasets: [
+                    {
+                        label: "Online Achieved",
+                        backgroundColor: "rgb(233, 227, 222)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [4, 5, 8, 8, 5, 4, 6]
+                    },
+                    {
+                        label: "EDP Completed",
+                        backgroundColor: "rgb(194, 194, 194)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        pointColor: "rgba(151,187,205,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [8, 12, 10, 11, 8, 7, 9]
+                    }
+                ]
+            },
+            options: {
+              scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+             },
+              title: {
+                    display: true,
+                    position: 'left',
+                    text: 'Time(in hour)'
+                },
+                maintainAspectRatio: false,
+                responsive: true
+                
+            }    
+          });
+          var ctxL3 = document.getElementById("lineChart3").getContext('2d');
+          var myLineChart = new Chart(ctxL3, {
+            type: 'line',
+            data: {
+                labels: ["2015", "2016", "2017","2018"],
+                datasets: [
+                    {
+                        label: "Online Achieved",
+                        backgroundColor: "rgb(233, 227, 222)",
+                        strokeColor: "rgba(220,220,220,1)",
+                        pointColor: "rgba(220,220,220,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(220,220,220,1)",
+                        data: [4, 5, 8]
+                    },
+                    {
+                        label: "EDP Completed",
+                        backgroundColor: "rgb(194, 194, 194)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        pointColor: "rgba(151,187,205,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [8, 12, 10]
+                    }
+                ]
+            },
+            options: {
+              scales: {
+                yAxes: [{
+                  ticks: {
+                    beginAtZero:true
+                  }
+                }]
+              },
+              title: {
+                    display: true,
+                    position: 'left',
+                    text: 'Time(in hour)'
+                },
+                maintainAspectRatio: false,
+                responsive: true
+                
+            }    
+          });
+      </script> 
     </body>
   </html>
