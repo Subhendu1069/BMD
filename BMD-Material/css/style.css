@@ -1,5 +1,5 @@
 body{
-	background-color: rgba(252, 252, 252, 0);
+	background-color: #f5f2f0;
 }
 li{
 	height: 40px;
@@ -9,15 +9,11 @@ nav{
 }
 .navbar{
 	min-height: 40px;
-
+	border-radius: 0;
+	box-shadow: 6px 6px 15px #888888;
 }
 .navbar-nav{
 	margin: 0;
-}
-.container-fluid{
-	height: 40px;
-	padding: 0;
-
 }
 .navbar-header{
 	height: 40px;
@@ -56,9 +52,6 @@ div#myNavbar.navbar-collapse.collapse.in{
 	float:right;
 	margin: 3px 0 0 2px;
 }
-.waves-effect{
-	display: block;
-}
 .displaytype{
 	display: flex;
 	padding: 0 10px;
@@ -69,9 +62,7 @@ div#myNavbar.navbar-collapse.collapse.in{
 nav .input-field{
 	line-height: 1;
 }
-label{
-	color: #ffffff;
-}
+
 .head{
 	display: flex;
 }
@@ -92,13 +83,6 @@ nav .button-collapse{
 .input-field label{
 	color: white;
 }
-[type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after,[type="radio"]:checked+label:after,
-[type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
-    border: 2px solid #ffffff;
-}
-[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after{
-	background-color: #ffffff;
-}
 #drop{
 	box-shadow: 6px 6px 15px #888888;
 }
@@ -116,4 +100,95 @@ a:focus, a:hover{
 }
 .user-view{
 	height: 180px;
+}
+.hov:hover{
+	background-color: #585656;
+}
+.row {
+    margin: 0 4%;
+    margin-bottom: 40px;
+}
+.card .card-action:last-child{
+	display: flex;
+}
+p{
+	    margin: 0 5px 10px;
+}
+.num {
+    border-radius: 100%;
+    background-color: #f5f2f0;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: -60px;
+    text-align: center;
+    line-height: 3.5;
+	box-shadow: -2px 4px 10px #888888;
+}
+.card{
+	margin-top: 20px;
+	width: 350px;
+	box-shadow: 6px 6px 15px #888888;
+}
+.card .card-content{
+	padding: 10px;
+}
+.card .card-content .card-title{
+	display: initial;
+}
+.card .card-content p{
+	margin: 0;
+    color: inherit;
+    display: flex;
+    font-size: small;
+}
+.compare{
+	width: 170px;
+	line-height: 2.2;
+}
+.btn-floating.halfway-fab{
+	position: absolute;
+    right: 10px;
+    top: 10px;
+	box-shadow: -2px 4px 10px #888888;
+	z-index: inherit;
+
+}
+.btn-floating i{
+	background-color: rgb(194, 194, 194);
+}
+.chart-container{
+	background-color: white;
+	box-shadow: 6px 6px 15px #888888;
+	width: 80%;
+	height: 800px;
+	margin: 0 3.5%;
+}
+.header{
+	padding-top: 5px;
+	padding-left: 15px;
+}
+.chart-view{
+	display: flex;
+	float: right;
+	margin-top: -45px;
+}
+canvas#lineChart1{
+	display: block;
+    height: 350px;
+    width: 1638px;
+}
+.labyr{
+	line-height: 2.5;
+	height: 30px;
+}
+select.browser-default{
+	width: 68px;
+	height: 30px
+}
+.SMEDetails{
+	background-color: white;
+	box-shadow: 6px 6px 15px #888888;
+	margin: 4%;
+	width: 90%;
 }
