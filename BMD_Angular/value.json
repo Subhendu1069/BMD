@@ -1,0 +1,576 @@
+{   
+   "chart": {
+        "caption": "Runtime Report",
+        "captionFontSize": "14",
+        "subcaptionFontSize": "14",
+        "subcaptionFontBold": "0",
+        "xAxisname": "EDP Dates",
+        "yAxisName": "Time (In Hours)",
+        "paletteColors": "#e1c4a9,#f7e4dc,#dbd7d2,#dddddd,#dadada,#696969",
+        "showAlternateHGridColor": "0",
+        "showPlotBorder": "0",
+        "usePlotGradientColor": "0",
+        "baseFontColor": "#333333",
+        "baseFont": "Helvetica Neue,Arial",
+        "showBorder": "0",
+        "bgColor": "#ffffff",
+        "showShadow": "0",
+        "canvasBgColor": "#ffffff",
+        "showCanvasBorder": "0",
+        "legendBorderAlpha": "0",
+        "legendShadow": "0",
+        "showValues": "1",
+        "divlineAlpha": "20",
+        "divlineColor": "#999999",
+        "divlineThickness": "0",
+        "divLineIsDashed": "1",
+        "divLineDashLen": "1",
+        "divLineGapLen": "1",
+        "numVisiblePlot": "30",
+        "flatScrollBars": "0",
+        "scrollheight": "10",
+        "useRoundEdges": "1"
+    },
+    "categories": [
+        {
+            "category": [
+                {
+                    "label": "08-01-2017"
+                },
+                {
+                    "label": "08-01-2017"
+                },
+                {
+                    "label": "08-01-2017"
+                },
+                {
+                    "label": "08-01-2017"
+                },
+                {
+                    "label": "May 2012"
+                },
+                {
+                    "label": "Jun 2012"
+                },
+                {
+                    "label": "Jul 2012"
+                },
+                {
+                    "label": "Aug 2012"
+                },
+                {
+                    "label": "Sep 2012"
+                },
+                {
+                    "label": "Oct 2012"
+                },
+                {
+                    "label": "Nov 2012"
+                },
+                {
+                    "label": "Dec 2012"
+                },
+                {
+                    "label": "Jan 2013"
+                },
+                {
+                    "label": "Feb 2013"
+                },
+                {
+                    "label": "Mar 2013"
+                },
+                {
+                    "label": "Apr 2013"
+                },
+                {
+                    "label": "May 2013"
+                },
+                {
+                    "label": "Jun 2013"
+                },
+                {
+                    "label": "Jul 2013"
+                },
+                {
+                    "label": "Aug 2013"
+                },
+                {
+                    "label": "Sep 2013"
+                },
+                {
+                    "label": "Oct 2013"
+                },
+                {
+                    "label": "Nov 2013"
+                },
+                {
+                    "label": "Dec 2013"
+                }
+            ]
+        }
+    ],
+    "dataset": [
+        {
+            "seriesName": "TET270AP",
+            "data": [
+                {
+                    "value": "16.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "18.00"
+                },
+                {
+                    "value": "19.00"
+                },
+                {
+                    "value": "15.00"
+                },
+                {
+                    "value": "21.00"
+                },
+                {
+                    "value": "16.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "17.00"
+                },
+                {
+                    "value": "22.00"
+                },
+                {
+                    "value": "19.00"
+                },
+                {
+                    "value": "23.00"
+                },
+                {
+                    "value": "24.00"
+                },
+                {
+                    "value": "25.00"
+                },
+                {
+                    "value": "26.00"
+                },
+                {
+                    "value": "24.00"
+                },
+                {
+                    "value": "19.00"
+                },
+                {
+                    "value": "22.00"
+                },
+                {
+                    "value": "18.00"
+                },
+                {
+                    "value": "19.00"
+                },
+                {
+                    "value": "22.00"
+                },
+                {
+                    "value": "21.00"
+                },
+                {
+                    "value": "23.00"
+                },
+                {
+                    "value": "24.00"
+                }
+            ]
+        },
+        {
+            "seriesName": "TET270ZP",
+            "data": [
+                {
+                    "value": "40"
+                },
+                {
+                    "value": "50"
+                },
+                {
+                    "value": "30.02"
+                },
+                {
+                    "value": "40.00"
+                },
+                {
+                    "value": "10.00"
+                },
+                {
+                    "value": "70.00"
+                },
+                {
+                    "value": "10.00"
+                },
+                {
+                    "value": "40.00"
+                },
+                {
+                    "value": "10.00"
+                },
+                {
+                    "value": "80.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "70.00"
+                },
+                {
+                    "value": "60.00"
+                },
+                {
+                    "value": "70.00"
+                },
+                {
+                    "value": "40.00"
+                },
+                {
+                    "value": "50.00"
+                },
+                {
+                    "value": "30.00"
+                },
+                {
+                    "value": "90.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "60.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "70.00"
+                },
+                {
+                    "value": "40.00"
+                },
+                {
+                    "value": "60.00"
+                }
+            ]
+        },
+        {
+            "seriesName": "WS27000P",
+            "data": [
+                {
+                    "value": "25"
+                },
+                {
+                    "value": "25"
+                },
+                {
+                    "value": "16.66"
+                },
+                {
+                    "value": "21.05"
+                },
+                {
+                    "value": "6.66"
+                },
+                {
+                    "value": "33.33"
+                },
+                {
+                    "value": "6.25"
+                },
+                {
+                    "value": "25"
+                },
+                {
+                    "value": "5.88"
+                },
+                {
+                    "value": "36.36"
+                },
+                {
+                    "value": "10.52"
+                },
+                {
+                    "value": "30.43"
+                },
+                {
+                    "value": "25"
+                },
+                {
+                    "value": "28"
+                },
+                {
+                    "value": "15.38"
+                },
+                {
+                    "value": "20.83"
+                },
+                {
+                    "value": "15.79"
+                },
+                {
+                    "value": "40.91"
+                },
+                {
+                    "value": "11.11"
+                },
+                {
+                    "value": "31.58"
+                },
+                {
+                    "value": "9.09"
+                },
+                {
+                    "value": "33.33"
+                },
+                {
+                    "value": "17.39"
+                },
+                {
+                    "value": "25"
+                }
+            ]
+        },
+        {
+            "seriesName": "TET380AP",
+            "data": [
+                {
+                    "value": "16.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "18.00"
+                },
+                {
+                    "value": "19.00"
+                },
+                {
+                    "value": "15.00"
+                },
+                {
+                    "value": "21.00"
+                },
+                {
+                    "value": "16.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "17.00"
+                },
+                {
+                    "value": "22.00"
+                },
+                {
+                    "value": "19.00"
+                },
+                {
+                    "value": "23.00"
+                },
+                {
+                    "value": "24.00"
+                },
+                {
+                    "value": "25.00"
+                },
+                {
+                    "value": "26.00"
+                },
+                {
+                    "value": "24.00"
+                },
+                {
+                    "value": "19.00"
+                },
+                {
+                    "value": "22.00"
+                },
+                {
+                    "value": "18.00"
+                },
+                {
+                    "value": "19.00"
+                },
+                {
+                    "value": "22.00"
+                },
+                {
+                    "value": "21.00"
+                },
+                {
+                    "value": "23.00"
+                },
+                {
+                    "value": "24.00"
+                }
+            ]
+        },
+        {
+            "seriesName": "TET380ZP",
+            "data": [
+                {
+                    "value": "40"
+                },
+                {
+                    "value": "50"
+                },
+                {
+                    "value": "30.02"
+                },
+                {
+                    "value": "40.00"
+                },
+                {
+                    "value": "10.00"
+                },
+                {
+                    "value": "70.00"
+                },
+                {
+                    "value": "10.00"
+                },
+                {
+                    "value": "40.00"
+                },
+                {
+                    "value": "10.00"
+                },
+                {
+                    "value": "80.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "70.00"
+                },
+                {
+                    "value": "60.00"
+                },
+                {
+                    "value": "70.00"
+                },
+                {
+                    "value": "40.00"
+                },
+                {
+                    "value": "50.00"
+                },
+                {
+                    "value": "30.00"
+                },
+                {
+                    "value": "90.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "60.00"
+                },
+                {
+                    "value": "20.00"
+                },
+                {
+                    "value": "70.00"
+                },
+                {
+                    "value": "40.00"
+                },
+                {
+                    "value": "60.00"
+                }
+            ]
+        },
+        {
+            "seriesName": "WS38000P",
+            "data": [
+                {
+                    "value": "25"
+                },
+                {
+                    "value": "25"
+                },
+                {
+                    "value": "16.66"
+                },
+                {
+                    "value": "21.05"
+                },
+                {
+                    "value": "6.66"
+                },
+                {
+                    "value": "33.33"
+                },
+                {
+                    "value": "6.25"
+                },
+                {
+                    "value": "25"
+                },
+                {
+                    "value": "5.88"
+                },
+                {
+                    "value": "36.36"
+                },
+                {
+                    "value": "10.52"
+                },
+                {
+                    "value": "30.43"
+                },
+                {
+                    "value": "25"
+                },
+                {
+                    "value": "28"
+                },
+                {
+                    "value": "15.38"
+                },
+                {
+                    "value": "20.83"
+                },
+                {
+                    "value": "15.79"
+                },
+                {
+                    "value": "40.91"
+                },
+                {
+                    "value": "11.11"
+                },
+                {
+                    "value": "31.58"
+                },
+                {
+                    "value": "9.09"
+                },
+                {
+                    "value": "33.33"
+                },
+                {
+                    "value": "17.39"
+                },
+                {
+                    "value": "25"
+                }
+            ]
+        }
+    ]
+ }
